@@ -1,0 +1,15 @@
+h1,h2,h3 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: Helvetica;
+}
+body{color:#404040;
+font-family:Georgia, 'Times New Roman', Times, serif}
+a{
+    font-weight: bold;
+    color:#A4A400; 
+   
+}
+h1{
+    text-align: Center;
+}
