@@ -8,8 +8,8 @@ table, td, th {
     .rheader {background: rgb(250, 180, 180); }
     
     body {background: linear-gradient(#a5daf8, #7593d3);
- 
+        font-family: Helvetica;
     }
-    body{ font-family: Helvetica;}
+    
     
 
