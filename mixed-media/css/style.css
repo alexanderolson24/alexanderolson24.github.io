@@ -6,9 +6,8 @@ table, td, th {
     
    
     
-    body {
-        font-family: Helvetica;
-    }
-    * {background: linear-gradient(#a5daf8, #7593d3)}
+    
+    * {background: linear-gradient(#a5daf8, #7593d3);
+    font-family: Helvetica;}
     
 
