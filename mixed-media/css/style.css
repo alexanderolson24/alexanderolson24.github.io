@@ -4,12 +4,11 @@ table, td, th {
     padding: 10px;}
 
     
-    th {background: rgb(200, 159, 238)}
-    .rheader {background: rgb(250, 180, 180); }
+   
     
-    body {background: linear-gradient(#a5daf8, #7593d3);
+    body {
         font-family: Helvetica;
     }
-    
+    * {background: linear-gradient(#a5daf8, #7593d3)}
     
 
