@@ -14,11 +14,11 @@
    <form action="#" method="post" id="contactform"
      onsubmit="alert('Not implemented yet');">
 <div id="fdiv">
-    <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name">
-    <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name"><br/><br/>
-    <input type="text" name="your_email" size="36" maxlength="100" placeholder="Your Email"><br/><br/>
-    <input type="text" name="reenter_email" size="36" maxlength="100" placeholder="Re-Enter Email"><br/><br/>
-    <input type="text" name="new_password" size="36" maxlength="100" placeholder="New Password"><br/><br/>
+    <input type="text" name="first_name" size="15" maxlength="100" placeholder="First Name"required >
+    <input type="text" name="last_name" size="15" maxlength="100" placeholder="Last Name"required ><br/><br/>
+    <input type="text" name="your_email" size="36" maxlength="100" placeholder="Your Email"required ><br/><br/>
+    <input type="text" name="reenter_email" size="36" maxlength="100" placeholder="Re-Enter Email"required ><br/><br/>
+    <input type="text" name="new_password" size="36" maxlength="100" placeholder="New Password"required ><br/><br/>
     
     <label for="Birthday"><b>Birthday</b></label><br/>
     <select name="Birthday" id="Birthday" required>
@@ -46,9 +46,9 @@
             <a href="#">Why do I need to provide my birthday?</a><br/><br/>
 
             <label for="gdr"></label> <br/>
-            <input type="radio" name="gdr" id="flwupy" value="yes" />
+            <input type="radio" name="gdr" id="flwupy" value="yes" required/>
             <label for="flwup" class="gdr">Male</label>
-            <input type="radio" name="gdr" id="flwupn" value="no" />
+            <input type="radio" name="gdr" id="flwupn" value="no" required/>
             <label for="flwupn" class="gdr">Female</label> <br/><br/>
             <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you <br/>have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>.</p>
             <br/> <br/>

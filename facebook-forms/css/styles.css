@@ -4,7 +4,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 button {color: #659d50;}
 
-#sbutton{color: white;
+sbutton {color: white;
     background: #659d50;
 font-size: 24px;
 padding: 15px;
