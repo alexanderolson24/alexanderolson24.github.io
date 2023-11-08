@@ -19,17 +19,19 @@
     <input type="number" id="n4" name="n4">
 
     <button onclick="
-    var num1 = document.getElementById('n1');
+    var num1 = document.getElementById('n1').value;
     num1= number(num1);
-    var num2 = document.getElementById('n2');
-    num2=number(num2)
-    var Num3 = document.getElementById('n3');
-    num3=number(num3)
-    var Num4 = document.getElementById('n4');
-    num4=number(num4)
-    var sum =num1 + num2 + num3 + num4;
-    var average = sum /4 
-    document.writeln('n1:' + 'n2' +'n3' + 'n4');
+    var num2 = document.getElementById('n2').value;
+    num2=number(num2);
+    var Num3 = document.getElementById('n3').value;
+    num3=number(num3);
+    var Num4 = document.getElementById('n4').value;
+    num4=number(num4);
+    var sum = num1 + num2 + num3 + num4;
+    var Average = sum / 4;
+
+    document.writeln('Average:' + Average);
+    document.writeln('Sum:' + Sum);
     ">Calculate Sum and Average</button>
 </body>
 </html>
