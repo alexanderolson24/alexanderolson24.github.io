@@ -12,9 +12,12 @@
     <input type="number" id="cir" name="cir">
     <button onclick="
     var pi = 3.14159;
-    var cir = 2*pi*rad;
-    document.writeln('Area' + area)
-    document.writeln('Circumference' + circumference)
+    var rad = document.getElementById('rad').value;
+    rad= number(rad);
+    var circumference = 2*pi*rad;
+    var area = pi*rad**2;
+    document.writeln('Area' + area);
+    document.writeln('Circumference' + circumference);
     ">Calculate Area & Circumference</button>
 </body>
 </html>
