@@ -9,18 +9,25 @@
     <label for="KWH">KWH used</label>
     <input type="number" id="KWH" name="KWH">
 
+  
+   
+
     <button onclick="calc()
-        ">Calculate</button>
+       ">Calculate</button>
 <p id="output"></p>
 
 <script>
     function calc() {
-        per= 0.0475;
-        var total= KHW * per;
+       var per= .0475;
+        var KW = KHW * per;
+
         var KWH = document.getElementById('KWH').value;
         var per = document.getElementById('per').value;
-        document.writeln('KHW' + KWH);
+
+        document.writeln('KWH' + KWH);
         document.writeln('per' + per);
+
+        
     }
     
 </script>
