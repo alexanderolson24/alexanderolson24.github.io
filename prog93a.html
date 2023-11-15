@@ -7,25 +7,27 @@
 </head>
 <body>
     <label for="KWH">KWH used</label>
-    <input type="number" id="KWH" name="KWH">
-
-  
-   
-
+    <input type="number" id="KWH" name="KWH" min="0">
     <button onclick="calc()
-       ">Calculate</button>
-<p id="output"></p>
+    ">Calculate</button>
+    <p id="output"></p>
 
 <script>
-    function calc() {
-       var per= .0475;
-        var KW = KHW * per;
+    function calculate() {
+        var KWH =Number(document.getElementById("KWH").value);
+        var baserate= KWH * 0.0475;
+        var surcharge = baserate * .10;
+        var citytax = baserate * .03;
+        var subtotal = baserate + surcharge + citytax;
+        var latefee= subtotal * .04;
+        var total = latefee + subtotal;
+       
+        var out = document.getElementById("output");
 
-        var KWH = document.getElementById('KWH').value;
-        var per = document.getElementById('per').value;
+        document.writeln('subtotal' + subtotal);
+        document.writeln('total' + total);
 
-        document.writeln('KWH' + KWH);
-        document.writeln('per' + per);
+
 
         
     }
