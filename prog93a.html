@@ -13,7 +13,7 @@
     <p id="output"></p>
 
 <script>
-    function calculate() {
+    function calc() {
         var KWH =Number(document.getElementById("KWH").value);
         var baserate= KWH * 0.0475;
         var surcharge = baserate * .10;
@@ -24,8 +24,8 @@
        
         var out = document.getElementById("output");
 
-        document.writeln('subtotal' + subtotal);
-        document.writeln('total' + total);
+        out.innerHTML =('Subtotal $' + subtotal.toFixed(2)+"<br>");
+        out.innerHTML +=('Total $' + total.toFixed(2));
 
 
 
