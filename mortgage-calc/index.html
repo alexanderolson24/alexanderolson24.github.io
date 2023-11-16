@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <label for="P">Principal:</label>
+    <input type="number" id="P" name="P" min="0">
+<br>
+<br>
+    <label for="R">Interest Rate as % (e.g. 7.9):</label>
+    <input type="number" id="R" name="R" min="0">
+<br>
+<br>
+    <label for="T">Number of Years</label>
+    <input type="number" id="T" name="T" min="0">
+<br>
+<br>
+    <label for="M">Monthly Payment</label>
+    <input type="number" id="M" name="M" min="0">
+<br>
+<br>
+    <button onclick="calc()
+    ">Calculate</button>
+    <p id="output"></p>
+    
+   
+<script>
+    function calc() {
+        var P =Number(document.getElementById("P").value);
+        var R =Number(document.getElementById("R").value);
+        var T =Number(document.getElementById("T").value);
+        var M =Number(document.getElementById("M").value);
+
+        
+        out.innerHTML =('Subtotal $' + subtotal.toFixed(2)+"<br>");
+    }
+</script>
+
+</body>
+</html>
