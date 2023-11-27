@@ -23,9 +23,10 @@
     <input type="number" id="M" name="M" min="0">
 <br>
 <br>
-    <button onclick="calc()
-    ">Calculate</button>
-    <p id="output"> <button onclick="reset();">Reset</button></p>
+<button onclick="calc()
+">Calculate</button>
+<p id="output"></p>
+
     
    
 <script>
@@ -39,8 +40,12 @@
         var M =Number(document.getElementById("M").value);
         M = Number(M);
 
-        
-        out.innerHTML =('Subtotal $' + subtotal.toFixed(2)+"<br>");
+       var total = ((R / 12 + 1)**(12 * T) *P) - ((((R / 12 + 1)**(12 * T) -1)*M)/(R/12));
+
+       var out = document.getElementById("output");
+
+       out.innerHTML +=('Total $' + total.toFixed(2));
+
     }
 </script>
 
