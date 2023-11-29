@@ -45,11 +45,20 @@ background-color: lightblue;
 <br>
 <button onclick="calc()
 ">Calculate</button>
-<p id="output"></p>
+    <button onclick="reset()">Clear</button>
+    <p id="out" style="background:  lightpink; padding: 15px;"></p>
 
     
    
 <script>
+function reset() {
+            document.getElementById("P").value = "";
+            document.getElementById("R").value = "";
+            document.getElementById("T").value = "";
+            document.getElementById("M").value = "";
+            document.getElementById("out").innerHTML = "";
+        }
+
     function calc() {
         var P =Number(document.getElementById("P").value);
         P = Number(P);
