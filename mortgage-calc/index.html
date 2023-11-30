@@ -48,19 +48,13 @@ font-family: 'Lucida Sans'
 <br>
 <button onclick="calc()
 ">Calculate</button>
-    <button onclick="reset()">reset</button>
+    
     <p id="out"></p>
 
     
    
 <script>
-function reset() {
-            document.getElementById("P").value = "";
-            document.getElementById("R").value = "";
-            document.getElementById("T").value = "";
-            document.getElementById("M").value = "";
-            document.getElementById("out").innerHTML = "";
-        }
+
 
     function calc() {
         var P =Number(document.getElementById("P").value);
