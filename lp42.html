@@ -26,23 +26,22 @@
             var length = Number(document.getElementById("Length").value);
             var width = Number(document.getElementById("Width").value);
             var height = Number(document.getElementById("Height").value);
+            var volume = length * width * height;
             
             var p = document.getElementById("out");
-            /*
-            if () {
-
-            } else if () {
-
-            } else if () {
-
-            } else {
-                p.innerHTML = "Package is okay.";
-            }
-            */
-            if (weight  <=26) {
-                p.innerHTML = "Package is okay." 
-            } else if (weight >=27
-            p.innerHTML = "Too Heavy.")
+            
+            if (weight >=27) {
+             p.innerHTML = "Too Heavy."
+            } else if (volume >= 100000) {
+            p.innerHTML = "Too Large."
+            } else if (weight >=27 && volume >= 100000) {
+            p.innerHTML = "Too heavy and too large."
+            } else (weight<=26 && volume < 100000) 
+               {p.innerHTML = "Package is okay.";
+             } 
+            
+            
+           
         }
     </script>
 </body>
