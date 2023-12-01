@@ -32,18 +32,19 @@
             height = Number(height);
             var volume = length * width * height;
             
+            var package = "Package is";
             var p = document.getElementById("opt");
             
             if (weight >=27) {
-             p.innerHTML = "Too Heavy."
+             package = "Too Heavy."
             } else if (volume >= 100000) {
-            p.innerHTML = "Too Large."
+            package = "Too Large."
             } else if (weight >=27 && volume >= 100000) {
-            p.innerHTML = "Too heavy and too large."
+            package = "Too heavy and too large."
             } else (weight<=26 && volume < 100000) 
-            { p.innerHTML = "Package is okay.";} 
+            { package = "okay.";} 
            
-            
+            p.innerHTML += package;
           
         }
     </script>
