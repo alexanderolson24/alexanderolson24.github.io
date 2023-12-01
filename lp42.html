@@ -19,7 +19,7 @@
     <input type="number" id="height" name="height" min="0" required>
 <br>
     <button onclick="calc()">Calculate</button>
-    <p id="out"></p>
+    <p id="opt"></p>
     <script>
         function calc() {
             var weight = Number(document.getElementById("Weight").value);
@@ -32,16 +32,16 @@
             height = Number(height);
             var volume = length * width * height;
             
-            var out = document.getElementById("out");
+            var p = document.getElementById("opt");
             
             if (weight >=27) {
-             out.innerHTML = "Too Heavy."
+             p.innerHTML = "Too Heavy."
             } else if (volume >= 100000) {
-            out.innerHTML = "Too Large."
+            p.innerHTML = "Too Large."
             } else if (weight >=27 && volume >= 100000) {
-            out.innerHTML = "Too heavy and too large."
+            p.innerHTML = "Too heavy and too large."
             } else (weight<=26 && volume < 100000) 
-            { out.innerHTML = "Package is okay.";} 
+            { p.innerHTML = "Package is okay.";} 
            
             
           
