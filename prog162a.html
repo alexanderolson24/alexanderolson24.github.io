@@ -6,8 +6,21 @@
     <title>Prog162a</title>
 </head>
 <body>
-    <label for="fact">Enter a Factorial Value 1-12</label>
-    <input type="number" id="fact" name="fact" min="0">
+    <select id="fact">
+        <option value="" selected disabled>Find factorical value 1-12</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+            </select>
     <button onclick="calc()
     ">Calculate</button>
     <p id="out"></p>
@@ -20,34 +33,32 @@
         var total =  0;
         var out= document.getElementById("out");
 
-        if (fact = 1) { 
+         if (fact == 1) { 
                total = 1;
-            } if ( fact = 2) {
+            } if ( fact == 2) {
                 total = 2;
-            }  if ( fact = 3) {
+            }  if ( fact == 3) {
                 total = 6;
-            } if ( fact = 4) {
+            } if ( fact == 4) {
                total = 24;
-            } if ( fact = 5) {
+            } if ( fact == 5) {
                 total = 120;
-            } if ( fact = 6) {
+            } if ( fact == 6) {
                total = 720;
-            } if (  fact = 7) {
+            } if (  fact == 7) {
                total = 5040;
-            } if ( fact = 8) {
+            } if ( fact == 8) {
                total = 40320;
-            } if ( fact = 9) {
+            } if ( fact == 9) {
                total = 362880;
-            } if (fact = 10) {
+            } if (fact == 10) {
               total = 3628800 ; 
-            } if (fact = 11) {
+            } if (fact == 11) {
                total =	39916800;
-            } if (fact = 12) {
+            } if (fact == 12) {
                 total = 479001600;
             }
-            else {  // Otherwise...
-                out.innerHTML = "Please enter Number 1-12."
-            }
+            
         out.innerHTML +=('Factorial value of entered number: ' + total);
         }
     </script>
