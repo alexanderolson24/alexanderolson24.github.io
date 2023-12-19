@@ -11,44 +11,45 @@
 </head>
 <body style="background: black;">
     <script>
-           //Predefine variables
-           var gap = 10;
+        // Predefine variables
+        var gap = 10;
         var cirNum = 40;
-        var cirsize = 20;
+        var cirSize = 20;
         var angle = 0;
         var ptNum = 100;
         var rectSize = 600;
         // Mouse move left - rotate counterclockwise
         // Mouse move right - rotate clockwise
 
-        //Initialize the program
+        // Initialize the program
         function setup() {
             createCanvas(windowWidth, windowHeight);
             angleMode(DEGREES);
         }
 
-        //Loop forever
+        // Loop forever
         function draw() {
             background('black');
 
             // Customize mouse
-            noCursor(); //Hide Mouse
-            noStroke(); //Disable outline
+            noCursor();  // Hide mouse
+            noStroke();  // Disable outline
             fill('white');
             circle(mouseX, mouseY, 5);
 
-            //Main graph
-            push(); //Store current drawing settings
-            translate(width/2, height/2); //Offsetto mid of screen
+            // Main graph
+            push();  // Store current drawing settings
+            translate(width/2, height/2);  // Offset to mid of screen
             rotate(angle);
             angle += map(mouseX, 0, width, -0.1, 0.1);
             noFill();
             stroke('white');
             strokeWeight(1);
             for (var lcv = 0; lcv < cirNum; lcv++) {
-                arc(0, 0, cirSize + gap * lcv, cirSize + gap * lcv, angle * lcv, 360 - angle/2);
+                arc(0, 0, cirSize + gap * lcv, cirSize + gap * lcv,
+                    angle * lcv, 360 - angle/2);
             }
-            pop(); //Restores pushed drawing style
+            pop();  // Restores pushed drawing style
 
             // Title and subtitle
             push();
@@ -57,12 +58,12 @@
             textFont('Arial');
             textSize(10);
             textAlign(CENTER, CENTER);
-            text("Album Title Here", 0, 0); //x, y
+            text("Album Title Here", 0, 0);  // x, y
             textSize(8);
             text("This is a demo", 0, 20);
             pop();
 
-            //Border
+            // Border
             push();
             translate(width/2, height/2);
             noFill();
