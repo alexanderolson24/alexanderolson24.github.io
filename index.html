@@ -20,33 +20,82 @@
     background-color: black;
 text-align: center;}
 
-        #leftdiv {
-            text-align: left;
+        #middlediv {
+            text-align: center;
             color: white;
     border: 10px solid red;
     background-color: black;
         }
 
-        #rightdiv {
-            text-align: right;
+        #bottomdiv {
+            text-align: center;
             color: white;
     border: 10px solid red;
     background-color: black;
+    
         }
-
        
+        input[type=contactme]{color: white;
+border: 5px solid white;}
+        input[type=contactme]:focus{color: white;
+border: 5px solid red;}
+       
+textarea[name=tbody]{color: white;
+border: 5px solid white;}
+
+textarea[name=tbody]:focus{color: white;
+border: 5px solid red;}
+
+input[type=submit]{color: white;
+border: 2px solid white;}
+input[type=submit]:focus{color: white;
+border: 5px solid red;}
     </style>
 </head>
 <body>
     <div id="topdiv">
 <h1><b>Xander Olson</b></h1>
+<p>about me</p>
     </div>
+<br>
+<br>
+    <div id="middlediv">
+<h2>Work I do and offer</h2>
+    </div>
+<br>
+<br>
+    <div id="bottomdiv">
+<h2>Contact Me</h2>
+<label for="myname">Name:</label><br/>
+<input type="contactme" name="myname" 
+id="myname" required> <br/> <br/>
 
-    <div id="leftdiv">
-<h2> demo</h2>
-    </div>
-    <div id="rightdiv">
-<h2>demo</h2>
+<label for="myemail">Email:</label><br/>
+<input type="contactme" name="myemail" 
+id="myemail" required> <br/> <br/>
+
+<label for="subject">Subject:</label><br/>
+<input type="contactme" name="subject" 
+id="subject" placeholder="CS 101" required> <br/> <br/>
+
+<textarea name="tbody" id="tbody" placeholder="Enter message..."
+required></textarea><br/><br/>
+
+<label for="attach">Attachments:</label> <br/>
+<input type="file" name="attach" id="attach"> <br/> <br/>
+
+<label for="flwup">Do you want a follow-up email?</label> <br/>
+<input type="radio" name="flwup" id="flwupy" value="yes" />
+<label for="flwup" class="flwlbl">Yes</label>
+<input type="radio" name="flwup" id="flwupn" value="no" />
+<label for="flwupn" class="flwlbl">No</label> <br/><br/>
+
+<input id="humans" type="hidden" id="humans" name="humans">
+
+
+<input type="submit" value="Submit" id="sbutton"/>
+<br>
+<br>
     </div>
     
     
